@@ -57,7 +57,7 @@ nav .active-1{
     color: #FF6624;
 }
 
-.fa-brands {
+.icone-1 .fa-brands {
     font-size: 25px;
 } 
 
@@ -77,3 +77,78 @@ nav .active-1{
 .content-1 {
     padding: 0px 100px 25px 100px;
 }
+
+
+.image-evenement-1{
+    padding-top: 5px;
+}
+
+.image-evenement-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 332px;
+    /* width: 1380px; */
+    max-width: 100%;
+} 
+
+.event-title-1{
+    padding: 10px 0px 10px 0px;
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+}
+
+.description-event-1 {
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+.event-info-1 span{
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Source Sans 3";
+    font-weight: 200;
+    font-size: 16px;
+    text-align: left;
+
+}
+.event-info-1 .fa-calendar, .event-info-1 .fa-clock, .event-info-1 .fa-location-dot  {
+    color: #FF6624;
+    font-size: 25px;
+
+}
+
+.event-info-1 i {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.acheter-billet-1{
+    padding:  15px 0px 15px 0px;
+    
+}
+.acheter-billet-1 button {
+    color: #FFFFFF;
+    font-family: "Source Sans 3";
+    font-weight: 200;
+    font-size: 18px;
+    width: 253px;
+    height: 40px;
+    background: #FF6624;
+    border-color: #929292;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+
+
