@@ -4,9 +4,9 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> DOMVIC - Inscriptions </title>
-        <link rel="stylesheet" href="../css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/fde7d6d800.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/main.css">
     </head>
 
     <body>
@@ -19,6 +19,7 @@
                     </div>
 
                     <div class="col-8">
+                        <!-- nav bar -->
                         <nav class="link-bar-1">
                             <a  href="accueil.html"> Accueil </a>
                             <a  href="programme.html"> Programme </a>
@@ -30,36 +31,308 @@
                         </nav>
                     </div>
                 </div>
-
-            </div>
-            
-            
-            
+            </div> 
         </header>
-    <p class="content-1">
-        Bootstrap Icons
-Bootstrap Icons is a growing library of SVG icons that are designed by @mdo and maintained by the Bootstrap Team. The beginnings of this icon set come from Bootstrap’s very own components—our forms, carousels, and more. Bootstrap has very few icon needs out of the box, so we didn’t need much. However, once we got going, we couldn’t stop making more.
+        <!-- content  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form class="info-personnelles">
+                        <fieldset class="formulaire-pad">
+                            <legend class="formlaire-legend"> Formulaire d'inscription </legend>
+                        
+                            <div class="row">
+                                <div class="col-6">
+                                    <fieldset>
+                                        <legend > Informations personnelles</legend>
+                                            <p>
+                                                <label for="nom"> Nom</label>
+                                                <input type="text" name="nom" id="nom" placeholder="Jack"/>
+                                            </p>
 
-Oh, and did we mention they’re completely open source? Licensed under MIT, just like Bootstrap, our icon set is available to everyone.
+                                            <p>
+                                                <label for="prenom"> Prenom</label>
+                                                <input type="text" name="prenom" id="prenom" placeholder="Doe"/>
+                                            </p>
+                                            
+                                            <p>
+                                                <label for="sexe"> Sexe </label>
+                                                <select id="sexe" name="sexe">
+                                                    <option value="Masculin"> Masculin</option>
+                                                    <option value="Feminin"> Feminin</option>
+                                                </select>
+                                            </p>
 
-Learn more about Bootstrap Icons, including how to install them and recommended usage.
-    </p>
+                                            <p>
+                                                <label for="telephone"> Téléphone</label>
+                                                <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="courriel"> Courriel</label>
+                                                <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="postal"> Code Postal</label>
+                                                <input type="text" name="postal" id="postal" placeholder="A41 0I4"/>
+                                            </p>
+                                    </fieldset>
+
+                                </div>
+
+                                <div class="col-6">
+                                    <fieldset >
+                                        <legend > Informations professionnelles</legend>
+                                            <p>
+                                            <label for="entreprise"> Entreprise</label>
+                                            <input type="text" name="entreprise" id="entreprise" placeholder="Le nom de votre entreprise"/>
+                                            </p>
+
+                                            <p>
+                                            <label for="poste"> Poste occupé</label>
+                                            <input type="text" name="poste" id="poste" placeholder="Le poste que vous occupé"/>
+                                            </p>
+                                        
+
+                                            <p>
+                                                <label for="secteur-activite"> Secteur d'activité</label>
+                                                <input type="text" name="secteur-activite" id="secteur-activite" placeholder="Informatique"/>
+                                            </p>
+                                        
+                                    </fieldset>
+
+                                    <fieldset class="buttom-margin-6 section-billet" >
+                                        <legend > Selection de Billet</legend>
+                                            <p>
+                                                <label for="type-billet"> Type de billet </label>
+                                                <select id="type-billet" name="type-billet">
+                                                    <option value="VVIP"> VVIP </option>
+                                                    <option value="VIP"> VIP </option>
+                                                    <option value="Etudiant"> Etudiant </option>
+                                                    <option value="Standard"> Standard </option>
+                                                </select>
+                                            </p>
+
+                                            <p>
+                                            <label for="code-promotion"> Code Promotionnel</label>
+                                            <input type="text" name="code-promotion" id="code-promotion" placeholder="ABACC111K"/>
+                                            </p>
+
+                                            <p>
+                                                <label for="mode-paiement"> Mode de Paiement</label>
+                                                <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
+                                                <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
+
+                                                <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
+                                                <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
+
+                                                <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
+                                                <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
+                                            </p>
+                                        
+                                    </fieldset>
+
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-4 ul-categorie">
+
+                    <fieldset class="list-fieldset">
+                        <legend class="list-legend"> Prix de Billets par Categorie</legend>
+                        <ul>
+                            <li class="cat-header"> Categorie <span> Montant</span></li>
+                            
+                            <li> VIP <span> 2500</span> </li>
+                            <li> VVIP <span> 2500</span> </li>
+                            <li> Standard <span> 2500</span> </li>
+                            <li> Etudiant <span> 2500</span> </li>
+                            
+                        </ul>
+
+                    </fieldset>
+                    
+                  
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+            <div class="row">
+                 first form 
+                <div class="col-4">
+                    <form class="info-personnelles">
+                        <fieldset >
+                            <legend > Informations personnelles</legend>
+                                <p>
+                                <label for="nom"> Nom</label>
+                                <input type="text" name="nom" id="nom" placeholder="Jack"/>
+                                </p>
+
+                                <p>
+                                <label for="prenom"> Prenom</label>
+                                <input type="text" name="prenom" id="prenom" placeholder="Doe"/>
+                                </p>
+                                <p>
+                                    <label for="sexe"> Sexe </label>
+                                    <select id="sexe" name="sexe">
+                                        <option value="Masculin"> Masculin</option>
+                                        <option value="Feminin"> Feminin</option>
+                                    </select>
+                                </p>
+
+                                <p>
+                                    <label for="telephone"> Téléphone</label>
+                                    <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888"/>
+                                </p>
+
+                                <p>
+                                    <label for="courriel"> Courriel</label>
+                                    <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="postal"> Code Postal</label>
+                                    <input type="text" name="postal" id="postal" placeholder="A41 0I4"/>
+                                </p>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <form class="info-personnelles">
+                        <fieldset >
+                            <legend > Informations professionnelles</legend>
+                                <p>
+                                <label for="entreprise"> Entreprise</label>
+                                <input type="text" name="entreprise" id="entreprise" placeholder="Le nom de votre entreprise"/>
+                                </p>
+
+                                <p>
+                                <label for="poste"> Poste occupé</label>
+                                <input type="text" name="poste" id="poste" placeholder="Le poste que vous occupé"/>
+                                </p>
+                               
+
+                                <p>
+                                    <label for="secteur-activite"> Secteur d'activité</label>
+                                    <input type="text" name="secteur-activite" id="secteur-activite" placeholder="Informatique"/>
+                                </p>
+                            
+                        </fieldset>
+
+                        <fieldset >
+                            <legend > Selection de Billet</legend>
+                                <p>
+                                    <label for="type-billet"> Type de billet </label>
+                                    <select id="type-billet" name="type-billet">
+                                        <option value="VVIP"> VVIP </option>
+                                        <option value="VIP"> VIP </option>
+                                        <option value="Etudiant"> Etudiant </option>
+                                        <option value="Standard"> Standard </option>
+                                    </select>
+                                </p>
+
+                                <p>
+                                <label for="code-promotion"> Code Promotionnel</label>
+                                <input type="text" name="code-promotion" id="code-promotion" placeholder="ABACC111K"/>
+                                </p>
+
+                                <p>
+                                    <label for="mode-paiement"> Mode de Paiement</label>
+                                    <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
+                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
+
+                                    <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
+                                    <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
+
+                                    <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
+                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
+                                </p>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <form class="info-personnelles"></form>
+                        <fieldset >
+                            <legend > Selection de Billet</legend>
+                                <p>
+                                    <label for="type-billet"> Type de billet </label>
+                                    <select id="type-billet" name="type-billet">
+                                        <option value="VVIP"> VVIP </option>
+                                        <option value="VIP"> VIP </option>
+                                        <option value="Etudiant"> Etudiant </option>
+                                        <option value="Standard"> Standard </option>
+                                    </select>
+                                </p>
+
+                                <p>
+                                <label for="code-promotion"> Code Promotionnel</label>
+                                <input type="text" name="code-promotion" id="code-promotion" placeholder="ABACC111K"/>
+                                </p>
+
+                                <p>
+                                    <label for="mode-paiement"> Mode de Paiement</label>
+                                    <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
+                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
+
+                                    <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
+                                    <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
+
+                                    <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
+                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
+                                </p>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div> -->
+
+        </div>
+
+        <!-- footer -->
+        <footer class="rectangle-1"> 
+            <div class="icone-1">
+                <a href="#"> <i class="fa-brands fa-square-twitter"> </i> </a>
+                <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            </div>
+    
+            <div class="footer-1">
+                <p> 5457, rue des bornes, Lévis, QC, CA</p>
+                <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
+    
+            </div>
+    
+        </footer>
         
     </body>
 
-    <footer class="rectangle-1"> 
-        <div class="icone-1">
-            <a href="#"> <i class="fa-brands fa-square-twitter"> </i> </a>
-            <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
-            <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
-            <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
-        </div>
-
-        <div class="footer-1">
-            <p> 5457, rue des bornes, Lévis, QC, CA</p>
-            <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
-
-        </div>
-
-    </footer>
+    
 </html>
