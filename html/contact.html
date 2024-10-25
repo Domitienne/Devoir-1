@@ -36,30 +36,72 @@
             
             
         </header>
-    <p class="content-1">
-        Bootstrap Icons
-Bootstrap Icons is a growing library of SVG icons that are designed by @mdo and maintained by the Bootstrap Team. The beginnings of this icon set come from Bootstrap’s very own components—our forms, carousels, and more. Bootstrap has very few icon needs out of the box, so we didn’t need much. However, once we got going, we couldn’t stop making more.
 
-Oh, and did we mention they’re completely open source? Licensed under MIT, just like Bootstrap, our icon set is available to everyone.
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-4">
+                     <form class="info-personnelles">
+                        <p>
+                            <label for="nom"> Nom</label>
+                            <input type="text" name="nom" id="nom" placeholder="Jack"/>
+                        </p>
 
-Learn more about Bootstrap Icons, including how to install them and recommended usage.
-    </p>
-        
+                        <p>
+                            <label for="prenom"> Prenom</label>
+                            <input type="text" name="prenom" id="prenom" placeholder="Doe"/>
+                        </p>
+                        
+                        <p>
+                            <label for="sexe"> Sexe </label>
+                            <select id="sexe" name="sexe">
+                                <option value="Masculin"> Masculin</option>
+                                <option value="Feminin"> Feminin</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="telephone"> Téléphone</label>
+                            <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888"/>
+                        </p>
+
+                        <p>
+                            <label for="courriel"> Courriel</label>
+                            <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com"/>
+                        </p>
+
+                        <p>
+                            <label for="message"> Message </label>
+                            <textarea name="message"> </textarea>
+                        </p>
+
+                        <div class="input-1">
+                            <input type="submit" value="Soummettre"/>
+                        </div>
+                     </form>
+
+                </div>
+
+                <div class="col-4">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="rectangle-1"> 
+            <div class="icone-1">
+                <a href="#"> <i class="fa-brands fa-square-twitter"> </i> </a>
+                <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            </div>
+    
+            <div class="footer-1">
+                <p> 5457, rue des bornes, Lévis, QC, CA</p>
+                <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
+    
+            </div>
+        </footer>
     </body>
-
-    <footer class="rectangle-1"> 
-        <div class="icone-1">
-            <a href="#"> <i class="fa-brands fa-square-twitter"> </i> </a>
-            <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
-            <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
-            <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
-        </div>
-
-        <div class="footer-1">
-            <p> 5457, rue des bornes, Lévis, QC, CA</p>
-            <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
-
-        </div>
-
-    </footer>
 </html>

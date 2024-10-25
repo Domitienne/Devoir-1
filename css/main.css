@@ -1,7 +1,7 @@
 .link-bar-1 a {
-	color: #929292; 
+	color: black; 
 	font-family: "Source Sans 3";
-	font-weight: 200;
+	font-weight: 800;
 	font-size: 16px;
 	text-align: center;
     text-decoration: none;
@@ -13,7 +13,7 @@
     color: #6c6b6b;
 }
 
-nav .active-1{
+nav .active-1, nav .active-1:hover{
     color: #FF6624;
 }
 
@@ -210,7 +210,7 @@ legend {
     font-weight: 500;
     font-size: 16px;
 }
-input[type=text], input[type=email], input[type=tel], select {
+input[type=text], input[type=email], input[type=tel], select, textarea {
     width: 100%;
     padding: 8px 5px;
     display: inline-block;
@@ -308,4 +308,137 @@ input[type=submit] {
 
 .input-1{
     text-align: center;
+}
+
+/* apropos */
+.apropos-1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.apropos-header-1{
+    color: #FF6624;
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.apropos-content-1 span {
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.apropos-content-1 {
+    padding-top: 15px;
+}
+
+.apropos-text-1 {
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.apropos-participant-1 img {
+    width: 73px;
+    height: 73px;
+    background: #FFFFFF;
+    border:#444444 1px solid ;
+    border-radius:50%;
+}
+
+.apropos-users-1 span {
+    display: inline-block;
+    padding-right: 35px;
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-style: italic;
+    color: #000000;
+    font-weight: bold;
+}
+
+.apropos-users-1{
+    padding: 50px 0px 25px 0px;
+}
+
+/* intervenant */
+.interv-header-1{
+    /* border: #62796b 1px solid; */
+    border-color:  #EBEBEB;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    padding-top: 38px;
+    background-color: #f5f2f2;
+    margin-top: 15px;
+}
+
+.inter-social-media a {
+    text-decoration: none;
+}
+
+.inter-social-media .fa-brands{
+    font-size: 25px;
+    color: #611f02;
+}
+
+.inter-social-media span {
+    margin-right:  30px;
+}
+
+.inter-social-media {
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
+
+.interv-name-1{
+    text-align:  center;
+    color: #FF6624;
+    font-family: "Source Sans 3";
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+.interv-desc-1 {
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+/* sponsor */
+
+.sponsor-1 img 
+{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.sponsor-1 {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.sponsor-1 div {
+    padding-bottom:  15px;
+}
+
+.sponsor-1 span div {
+   padding-top:  10px;
+   color: #D68227;
+    font-family: "Source Sans 3";
+    font-weight: 700;
+    font-size: 14px;
 }
