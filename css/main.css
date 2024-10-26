@@ -23,7 +23,6 @@ nav .active-1, nav .active-1:hover{
 }
 .rectangle-1 {
 	height: 112px;
-	padding: 8px 8px 8px 8px;
 	opacity: 100%;
 	background: #EBEBEB ;
 	border-radius: 5px 5px 5px 5px;
@@ -100,11 +99,10 @@ nav .active-1, nav .active-1:hover{
 } 
 
 .event-title-1{
-    padding: 10px 0px 5px 0px;
-    color: #000000;
+    padding: 15px 0px 25px 0px;
     font-family: "Source Sans 3";
     font-weight: 400;
-    font-size: 26px;
+    font-size: 40px;
     text-align: center;
     color: #FF6624;
 }
@@ -377,7 +375,7 @@ input[type=submit] {
 }
 
 .apropos-content-1 {
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .apropos-text-1 {
@@ -431,7 +429,7 @@ input[type=submit] {
     text-align: center;
     padding-top: 38px;
     background-color: #f5f2f2;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .inter-social-media a, .contact-social-media a {
@@ -482,7 +480,7 @@ input[type=submit] {
 
 .sponsor-1 {
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 25px 0px;
 }
 
 .sponsor-1 div {
@@ -527,7 +525,7 @@ input[type=submit] {
     font-family: "Source Sans 3";
     font-weight: 500;
     font-size: 14px;
-    padding: 30px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
 }
 
 .maps-1 iframe {
@@ -540,7 +538,7 @@ input[type=submit] {
 }
 
 .contact-info-1 {
-    padding-top: 35px;
+    padding-top: 25px;
     font-family: "Source Sans 3";
     font-weight: 500;
     font-size: 16px;
