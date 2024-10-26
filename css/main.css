@@ -1,8 +1,8 @@
 .link-bar-1 a {
 	color: black; 
 	font-family: "Source Sans 3";
-	font-weight: 800;
-	font-size: 16px;
+	font-weight: 600;
+	font-size: 17px;
 	text-align: center;
     text-decoration: none;
     padding: 0px 20px 0px 0px;
@@ -49,12 +49,19 @@ nav .active-1, nav .active-1:hover{
 }
 .icone-1 a {
     text-decoration: none;
-    color: #7A7A7A;
+    color: #181817;
+    
 }
+
+/* .icone-1 .fa-square-twitter {
+    background: linear-gradient(to right, #999897 0%, #606062 100%);
+    border-radius: 25%;
+    
+} */
 
 .icone-1 a:hover {
     text-decoration: none;
-    color: #FF6624;
+    color: #401604;
 }
 
 .icone-1 .fa-brands {
@@ -62,7 +69,7 @@ nav .active-1, nav .active-1:hover{
 } 
 
 .footer-1 p {
-    color: #AAAAAA;
+    color: #858282;
     font-family: "Source Sans Pro";
     font-weight: 200;
     font-size: 12px;
@@ -80,7 +87,7 @@ nav .active-1, nav .active-1:hover{
 
 
 .image-evenement-1{
-    padding-top: 5px;
+    padding-bottom: 25px;
 }
 
 .image-evenement-1 img {
@@ -88,17 +95,18 @@ nav .active-1, nav .active-1:hover{
     margin-left: auto;
     margin-right: auto; 
     height: 332px;
-    /* width: 1380px; */
+    width: 100%; 
     max-width: 100%;
 } 
 
 .event-title-1{
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 5px 0px;
     color: #000000;
     font-family: "Source Sans 3";
     font-weight: 400;
     font-size: 26px;
     text-align: center;
+    color: #FF6624;
 }
 
 .description-event-1 {
@@ -189,6 +197,7 @@ th {
     font-family: "Source Sans 3";
     padding-bottom: 15px;
 }
+
 /* formulaire  */
 
 fieldset {
@@ -219,7 +228,19 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
     box-sizing: border-box;
   }
 
-  
+.formulaire-pad , .info-contact-1 i{
+    text-align:  center;
+    padding-bottom: 15px;
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.formulaire-pad span, .info-contact-1 span, .contact-form-1 span{
+    color: red;
+}
+
 
 .info-personnelles{
     padding:  25px 0px 25px 0px;
@@ -257,7 +278,7 @@ ul > li > span:first-of-type{
 }
 
 .formulaire-pad{
-    padding-top: 25px;
+    padding-top: 0px;
     padding-bottom: 30px;
 }
 
@@ -380,16 +401,16 @@ input[type=submit] {
     margin-top: 15px;
 }
 
-.inter-social-media a {
+.inter-social-media a, .contact-social-media a {
     text-decoration: none;
 }
 
-.inter-social-media .fa-brands{
+.inter-social-media .fa-brands, .contact-social-media .fa-brands{
     font-size: 25px;
     color: #611f02;
 }
 
-.inter-social-media span {
+.inter-social-media span, .contact-social-media span {
     margin-right:  30px;
 }
 
@@ -442,3 +463,81 @@ input[type=submit] {
     font-weight: 700;
     font-size: 14px;
 }
+
+/* Contact */
+
+.row-form-col-25 label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+.row-form-col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+.row-form-col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+.row-form-1::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.contact-form-1 {
+    color: #515050;
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 30px 25px 25px 25px;
+}
+
+.maps-1 iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.maps-1 {
+    padding-bottom: 15px;
+}
+
+.contact-info-1 {
+    padding-top: 35px;
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.contact-info-1 .fa-solid {
+    font-size: 25px;
+    color: #6c6b6b;
+}
+
+.contact-info-2 {
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+.contact-email-1{
+    padding-bottom: 10px;
+}
+
+.contact-info-2 i {
+    margin-right: 10px;
+}
+
+.contact-social-media {
+    text-align: left;
+    padding: 25px 0px 25px 0px;
+}
+
+.info-contact-1 {
+    padding-bottom: 15px;
+}
+

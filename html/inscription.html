@@ -42,35 +42,38 @@
                             <legend class="formlaire-legend"> Formulaire d'inscription </legend>
                         
                             <div class="row">
+                                <div class="info-contact-1">
+                                    <i> Veuillez remplir ce formaulaire pour vous inscrire à notre evènement. Les champs avec (<span> * </span>) sont obligatoire </i>
+                                </div>
                                 <div class="col-6">
                                     <fieldset>
                                         <legend > Informations personnelles</legend>
                                             <p>
-                                                <label for="nom"> Nom</label>
-                                                <input type="text" name="nom" id="nom" placeholder="Jack"/>
+                                                <label for="nom"> Nom <span> * </span></label>
+                                                <input type="text" name="nom" id="nom" placeholder="Jack" required/>
                                             </p>
 
                                             <p>
-                                                <label for="prenom"> Prenom</label>
-                                                <input type="text" name="prenom" id="prenom" placeholder="Doe"/>
+                                                <label for="prenom"> Prenom <span> * </span> </label>
+                                                <input type="text" name="prenom" id="prenom" placeholder="Doe" required/>
                                             </p>
                                             
                                             <p>
-                                                <label for="sexe"> Sexe </label>
-                                                <select id="sexe" name="sexe">
+                                                <label for="sexe"> Sexe <span> * </span> </label>
+                                                <select id="sexe" name="sexe" required>
                                                     <option value="Masculin"> Masculin</option>
                                                     <option value="Feminin"> Feminin</option>
                                                 </select>
                                             </p>
 
                                             <p>
-                                                <label for="telephone"> Téléphone</label>
-                                                <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888"/>
+                                                <label for="telephone"> Téléphone <span> * </span></label>
+                                                <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888" required/>
                                             </p>
 
                                             <p>
-                                                <label for="courriel"> Courriel</label>
-                                                <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com"/>
+                                                <label for="courriel"> Courriel <span> * </span> </label>
+                                                <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com" required/>
                                             </p>
 
                                             <p>
@@ -85,13 +88,13 @@
                                     <fieldset >
                                         <legend > Informations professionnelles</legend>
                                             <p>
-                                            <label for="entreprise"> Entreprise</label>
-                                            <input type="text" name="entreprise" id="entreprise" placeholder="Le nom de votre entreprise"/>
+                                            <label for="entreprise"> Entreprise <span> * </span> </label>
+                                            <input type="text" name="entreprise" id="entreprise" placeholder="Le nom de votre entreprise" required/>
                                             </p>
 
                                             <p>
-                                            <label for="poste"> Poste occupé</label>
-                                            <input type="text" name="poste" id="poste" placeholder="Le poste que vous occupé"/>
+                                            <label for="poste"> Poste occupé <span> * </span> </label>
+                                            <input type="text" name="poste" id="poste" placeholder="Le poste que vous occupé" required/>
                                             </p>
                                         
 
@@ -105,8 +108,8 @@
                                     <fieldset class="buttom-margin-6 section-billet" >
                                         <legend > Selection de Billet</legend>
                                             <p>
-                                                <label for="type-billet"> Type de billet </label>
-                                                <select id="type-billet" name="type-billet">
+                                                <label for="type-billet"> Type de billet <span> * </span> </label>
+                                                <select id="type-billet" name="type-billet" required>
                                                     <option value="VVIP"> VVIP </option>
                                                     <option value="VIP"> VIP </option>
                                                     <option value="Etudiant"> Etudiant </option>
@@ -120,15 +123,15 @@
                                             </p>
 
                                             <p>
-                                                <label for="mode-paiement"> Mode de Paiement</label>
+                                                <label for="mode-paiement"> Mode de Paiement <span> * </span> </label>
                                                 <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
-                                                <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
+                                                <input type="radio" id="paiement-cheque" name="mode-paiement" value="Chèque" required />
 
                                                 <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
-                                                <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
+                                                <input type="radio" id="paiement-visa" name="mode-paiement" value="VISA" required/>
 
                                                 <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
-                                                <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
+                                                <input type="radio" id="paiement-cheque" name="mode-paiement" value="Mastercard" required/>
                                             </p>
                                         
                                     </fieldset>
@@ -160,181 +163,32 @@
                         </ul>
 
                     </fieldset>
-                    
-                  
-
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-            <div class="row">
-                 first form 
-                <div class="col-4">
-                    <form class="info-personnelles">
-                        <fieldset >
-                            <legend > Informations personnelles</legend>
-                                <p>
-                                <label for="nom"> Nom</label>
-                                <input type="text" name="nom" id="nom" placeholder="Jack"/>
-                                </p>
-
-                                <p>
-                                <label for="prenom"> Prenom</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Doe"/>
-                                </p>
-                                <p>
-                                    <label for="sexe"> Sexe </label>
-                                    <select id="sexe" name="sexe">
-                                        <option value="Masculin"> Masculin</option>
-                                        <option value="Feminin"> Feminin</option>
-                                    </select>
-                                </p>
-
-                                <p>
-                                    <label for="telephone"> Téléphone</label>
-                                    <input type="tel" name="telephone" id="telephone" placeholder="418 888 8888"/>
-                                </p>
-
-                                <p>
-                                    <label for="courriel"> Courriel</label>
-                                    <input type="email" name="courriel" id="courriel" placeholder="Joe@domvic.com"/>
-                                </p>
-
-                                <p>
-                                    <label for="postal"> Code Postal</label>
-                                    <input type="text" name="postal" id="postal" placeholder="A41 0I4"/>
-                                </p>
-                            
-                        </fieldset>
-                    </form>
-                </div>
-
-                <div class="col-4">
-                    <form class="info-personnelles">
-                        <fieldset >
-                            <legend > Informations professionnelles</legend>
-                                <p>
-                                <label for="entreprise"> Entreprise</label>
-                                <input type="text" name="entreprise" id="entreprise" placeholder="Le nom de votre entreprise"/>
-                                </p>
-
-                                <p>
-                                <label for="poste"> Poste occupé</label>
-                                <input type="text" name="poste" id="poste" placeholder="Le poste que vous occupé"/>
-                                </p>
-                               
-
-                                <p>
-                                    <label for="secteur-activite"> Secteur d'activité</label>
-                                    <input type="text" name="secteur-activite" id="secteur-activite" placeholder="Informatique"/>
-                                </p>
-                            
-                        </fieldset>
-
-                        <fieldset >
-                            <legend > Selection de Billet</legend>
-                                <p>
-                                    <label for="type-billet"> Type de billet </label>
-                                    <select id="type-billet" name="type-billet">
-                                        <option value="VVIP"> VVIP </option>
-                                        <option value="VIP"> VIP </option>
-                                        <option value="Etudiant"> Etudiant </option>
-                                        <option value="Standard"> Standard </option>
-                                    </select>
-                                </p>
-
-                                <p>
-                                <label for="code-promotion"> Code Promotionnel</label>
-                                <input type="text" name="code-promotion" id="code-promotion" placeholder="ABACC111K"/>
-                                </p>
-
-                                <p>
-                                    <label for="mode-paiement"> Mode de Paiement</label>
-                                    <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
-                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
-
-                                    <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
-                                    <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
-
-                                    <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
-                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
-                                </p>
-                            
-                        </fieldset>
-                    </form>
-                </div>
-
-                <div class="col-4">
-                    <form class="info-personnelles"></form>
-                        <fieldset >
-                            <legend > Selection de Billet</legend>
-                                <p>
-                                    <label for="type-billet"> Type de billet </label>
-                                    <select id="type-billet" name="type-billet">
-                                        <option value="VVIP"> VVIP </option>
-                                        <option value="VIP"> VIP </option>
-                                        <option value="Etudiant"> Etudiant </option>
-                                        <option value="Standard"> Standard </option>
-                                    </select>
-                                </p>
-
-                                <p>
-                                <label for="code-promotion"> Code Promotionnel</label>
-                                <input type="text" name="code-promotion" id="code-promotion" placeholder="ABACC111K"/>
-                                </p>
-
-                                <p>
-                                    <label for="mode-paiement"> Mode de Paiement</label>
-                                    <label for="paiement-cheque"> <i class="fa-solid fa-money-check-dollar"></i> </label>
-                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Chèque"/>
-
-                                    <label for="paiement-visa"> <i class="fa-brands fa-cc-visa"></i> </label>
-                                    <input type="radio" id="paiement-visa", name="mode-paiement", value="VISA"/>
-
-                                    <label for="paiement-Mastercard"> <i class="fa-brands fa-cc-mastercard"></i> </label>
-                                    <input type="radio" id="paiement-cheque", name="mode-paiement", value="Mastercard"/>
-                                </p>
-                            
-                        </fieldset>
-                    </form>
-                </div>
-
-            </div> -->
 
         </div>
 
         <!-- footer -->
-        <footer class="rectangle-1"> 
-            <div class="icone-1">
-                <a href="#"> <i class="fa-brands fa-square-twitter"> </i> </a>
-                <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
-                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
-                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+        
+        <footer class="rectangle-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="icone-1">
+                            <a href="https://www.X.com" target="_blank"> <i class="fa-brands fa-square-twitter"> </i> </a>
+                            <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-square-instagram"></i> </a>
+                            <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+                            <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                        </div>
+                
+                        <div class="footer-1">
+                            <p> 5457, rue des bornes, Lévis, QC, CA</p>
+                            <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
+                
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="footer-1">
-                <p> 5457, rue des bornes, Lévis, QC, CA</p>
-                <p>  &copy; 2022 DOMVIC.  Tout droits reservés.</p>
-    
-            </div>
-    
         </footer>
         
     </body>
