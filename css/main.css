@@ -251,30 +251,30 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
     padding:  25px 0px 25px 0px;
 }
 
- ul {
+.list-fieldset ul {
     list-style-type: none;
     padding: 0;
     
   }
   
-ul li {
+.list-fieldset ul li {
 padding: 8px 16px;
 border-bottom: 1px solid #C0C0C0;
 }
 
-ul {
+.list-fieldset ul {
     display: block;
 }
 
-ul li {
+.list-fieldset ul li {
     display: block;
 }
     
-ul li span {
+.list-fieldset ul li span {
     display: inline-block;
 }
     
-ul > li > span:first-of-type{
+.list-fieldset  ul  li  span:first-of-type{
     float: right;
 }
 
@@ -356,6 +356,26 @@ input[type=submit] {
     font-size: 20px;
 }
 
+.apropos-list {
+    font-family: "Source Sans 3";
+    font-weight: 200;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.apropos-list li {
+    padding-bottom: 6px;
+}
+.apropos-text-1 ul {
+    list-style-type: none;
+}
+.apropos-list span {
+    color: #000000;
+    font-family: "Source Sans 3";
+    font-weight: 700;
+    font-size: 13px;
+}
+
 .apropos-content-1 {
     padding-top: 15px;
 }
@@ -387,8 +407,16 @@ input[type=submit] {
     font-weight: bold;
 }
 
+.user-header-1 {
+    font-family: "Source Sans 3";
+    font-size: 25px;
+    color: #FF6624;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
 .apropos-users-1{
-    padding: 50px 0px 25px 0px;
+    padding: 5px 0px 25px 0px;
 }
 
 /* intervenant */
