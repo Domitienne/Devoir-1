@@ -166,14 +166,19 @@ table{
     width: 100%;
   }
   
-table td, table th {
+/* table td, table th {
     text-align: center;
     padding: 15px;
-  }
+  } */
+
+table td, table th {
+    text-align: left;
+    padding: 15px;
+}
   
-  tr:nth-child(odd) {
+tr:nth-child(odd) {
     background-color:  #f7f7f7;
-  }
+}
 
 table tr{
     border-color: #C0C0C0;
@@ -540,4 +545,18 @@ input[type=submit] {
 .info-contact-1 {
     padding-bottom: 15px;
 }
+
+.description-event-1 span{
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    font-size: 16px;
+    font-weight: 800;
+}
+@keyframes clignoter {
+    0%   { color:#000000; }
+    40%   {color: #FF6624; }
+    100% { opacity:#000000; }
+  }
 
